@@ -63,7 +63,7 @@
 	function details(songId,cityName)
 	{
 		$.ajax({
-				url: "getDetails.php?idSearch=" + songId + "&citySearch=" + cityName,
+				url: "http://paaaulz.altervista.org/getDetails.php?idSearch=" + songId + "&citySearch=" + cityName,
 				contentType: "application/x-www-form-urlencoded;charset=utf-8",
         		success: function(result)
 				{
