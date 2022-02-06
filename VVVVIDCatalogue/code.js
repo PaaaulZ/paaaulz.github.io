@@ -36,7 +36,7 @@ function loadAnimeList(searchParameter = "")
     var list = [];
     $.ajax({
         dataType: "json",
-        url: "http://paaaulz.altervista.org/vvvvidcat/getList.php?searchParameter=" + searchParameter,
+        url: "https://paaaulz.altervista.org/vvvvidcat/getList.php?searchParameter=" + searchParameter,
         success: function (result)
         {
             draw(result);
