@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>VVVVID Catalogue</title>
+        <style = 'text/css'>
+            table tr 
+            {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+            }
+        </style>
+        <link rel= "stylesheet" type= "text/css" href= "styles/css.css">
+        <link rel= "stylesheet" type= "text/css" href= "styles/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type = 'text/javascript' src = 'code.js'></script>
+    </head>
+    <body>
+        <br/>
+        <label for = 'searchParameter'>Text to search: </label>
+        <input type = 'text' id  = 'searchParameter' name = 'searchParameter' />
+        <input type = 'button' onclick = 'search();' value = 'Search' />
+        <input type = 'button' onclick = 'reset();' value = 'Reset' />
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-wrap">
+                            <table class="table table-bordered text-center">
+                                <tr id = 'tableRow'>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
